@@ -12,19 +12,19 @@ describe Game do
     end
   end
 
-  describe '#player_one' do
+  describe '#player_1' do
     it 'returns a instance of a player' do
       expect(subject.player_1).to eq(player_1)
     end
   end
 
-  describe 'player turn' do
-    it 'displays the player turn' do
+  describe '#current_turn' do
+    it 'returns player_1' do
       expect(subject.current_turn).to eq(player_1)
     end
   end
-
-  describe 'change turn' do
+  
+  describe '#change_turn' do
     it 'changes the current player after their turn' do
       subject.switch_player
       expect(subject.current_turn).to eq(player_2)

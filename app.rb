@@ -27,6 +27,7 @@ class Battle < Sinatra::Base
   get '/attack' do
     @game = $game
     @game.attack(@game.opponent_of)
+    # quick fix for displaying the correct players in attack view
     @opponent = @game.opponent_of
     @attacker = @game.current_turn
     @game.switch_player
