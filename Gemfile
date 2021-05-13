@@ -7,4 +7,5 @@ gem 'sinatra'
 gem 'rspec'
 gem 'capybara'
 gem 'launchy'
+gem 'sinatra-contrib'
 # gem "rails"
