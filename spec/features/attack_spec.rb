@@ -1,4 +1,4 @@
-feature 'attacking player 2' do
+feature 'first attack' do
   scenario 'reduces player 2 HP by 10 ' do
     sign_in_and_play
     click_button("Attack")

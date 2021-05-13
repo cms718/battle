@@ -26,13 +26,12 @@ describe Game do
 
   describe 'change turn' do
     it 'changes the current player after their turn' do
-      expect(player_2).to receive(:take_damage)
-      subject.attack(player_2)
+      subject.switch_player
       expect(subject.current_turn).to eq(player_2)
     end
   end
 
-  describe 'returns opposite player' do
+  describe '#opponent_off' do
     it 'returns the opponent of the current player' do
       expect(subject.opponent_of).to eq(player_2)
     end
