@@ -14,11 +14,4 @@ describe Player do
       expect(charlotte.hp).to eq(60)
     end
   end
-
-  describe '#attack' do
-    it 'reduces different player hp by 10' do
-      charlotte.attack(mittens)
-      expect(mittens.hp).to eq(50)   
-    end
-  end
 end
